@@ -6,34 +6,34 @@ campaign
 -
 cf_id int PK
 contact_id int FK >- contacts.contact_id
-company_name VAR(30)
-description VAR(50)
+company_name VARCHAR(50)
+description VARCHAR(500)
 goal float
 pledged float
-outcome boolean
+outcome VARCHAR(50)
 backers_count int
-country VAR(30)
-currency VAR(10)
-launched_date date
-end_date date
-staff_pick boolean
-spotlight boolean
-category VAR(30) FK >- category.category
-subcategory VAR(30) FK >- subcategory.subcategory
+country VARCHAR(50)
+currency VARCHAR(50)
+launched_date VARCHAR(50)
+end_date VARCHAR(50)
+staff_pick VARCHAR(50)
+spotlight VARCHAR(50)
+category VARCHAR(50) FK >- category.category
+subcategory VARCHAR(50) FK >- subcategory.subcategory
 
 contacts
 -
-contact_id int PK
-first_name VAR(30)
-last_name VAR(30)
-email VAR(50)
+contact_id int Pk
+first_name VARCHAR(50)
+last_name VARCHAR(50)
+email VARCHAR(50)
 
 category
 -
-category_id int PK
-category VAR(30) PK
+category_id VARCHAR(50) 
+category VARCHAR(50) PK
 
 subcategory
 -
-subcategory_id int PK
-subcategory VAR(30) PK
+subcategory_id VARCHAR(50) 
+subcategory VARCHAR(50) PK
